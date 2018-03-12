@@ -1,0 +1,235 @@
+html{ font-size: 18px;
+line-height: 1.4px;}
+
+h1{ font-family: Helvetica;
+font-size: 1rem;
+font-weight: bold;
+color: white;}
+
+.container{max-width: 960px;
+margin: 0 auto;
+}
+
+/* banner */
+
+.logo {background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+height: 30rem;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;}
+
+
+.header {width: 960px;
+background-color: cadetblue;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+font-family: Helvetica;
+font-size: 1rem;
+margin: 0 auto;
+position: relative;
+top: 1rem;
+}
+
+.headerimage {display: flex;
+align-items: center;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.headerimage img{margin-left: 2rem;
+margin-right: 1rem;
+height: 1.5rem;}
+
+.headernav{display: inline-block;
+align-items: center;
+margin-top: 1rem;
+margin-bottom: 1rem;
+margin-right: 1rem;
+}
+
+.headernav span{margin-right: 2rem;}
+
+/* dont look box */
+
+.titlecontainer{
+position: relative;
+top: 10rem;
+left: 32rem;
+background-color: white;
+width: 45%;}
+
+.title h1{ display:block;
+font-size: 2rem;
+color: black;
+padding: 1.5rem 5rem;
+font-family: Helvetica;
+font-weight: bold;
+line-height: 1.2rem;}
+
+
+
+
+/* services */
+.services {display: flex;
+height: 8rem;
+margin-top: 3rem;
+justify-content: center;
+align-items: center;
+}
+
+.service1, .service2, .service3{
+display: flex;
+flex-direction: column;
+}
+
+.productimage{width:5rem;
+}
+
+.service2, .service1{margin-right: 6rem;}
+
+
+.description{display: block;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.service2 .description{padding-top: 1rem;}
+
+ /* icon images styling */
+.service1 img{width: 3.5rem;
+padding-left: 1.5rem;}
+
+.service2 img{width: 5rem;}
+
+.service3 img{width:5rem;}
+
+/* businessinfo */
+
+.businessinfo{margin-top: 3rem;
+display: flex;
+justify-content: center;
+}
+
+.infotitle{width: 10rem;
+background-color: cadetblue;
+padding: .5rem 1.25rem;
+margin-bottom: 1rem;
+}
+.holding1{width: 35%;
+display: flex;
+flex-direction: column;
+margin-right: 2.5%;
+}
+
+.holding2{width: 35%;
+display: flex;
+flex-direction: column;
+margin-left: 2.5%;}
+
+/* footer */
+.footer{margin-top: 5rem;
+background-color: azure;}
+
+.copyright{display: flex;
+align-items: center;
+}
+
+.copyright img{ height: 1.5rem;
+padding: 4rem 1rem 4rem 4rem;}
+
+
+/* Media Queries (Tablet) */
+
+@media screen and (max-width: 1200px){
+  .header{position: relative;
+  top: 0;}
+
+  .logo{height: 22rem;}
+
+  .titlecontainer{margin-right: 2rem;
+  position: relative;
+top:5rem;}
+
+  .title h1{font-size:1.33rem;
+  padding: .75rem 4rem;}
+
+/* Media Queries (Mobile Header) */
+
+@media only screen and (max-width: 470px){
+
+  .logo{height: 17rem;
+  background-position: 20%;
+}
+
+.header {position: relative;
+top: 0;
+display: flex;
+justify-content: space-between;}
+
+.titlecontainer{position: relative;
+top: 9rem;
+left: 1rem;
+width: auto;}
+
+.titlecontainer h1{font-size: 1rem;
+text-align: center;
+padding: 1rem 0;
+}
+
+.copyright span{display:none;}
+
+.headerimage .optics{display: none;}
+
+
+/* Media Queries (Mobile Services) */
+
+
+.description{font-size: .77rem;
+margin-bottom: 1.54rem;}
+
+.services{
+margin-top: 3.77rem;
+margin-bottom: 3.77rem;
+flex-direction: column;
+height: 100%;
+justify-content: center;
+align-items: center;
+}
+
+.services .service1 {margin: 0 auto;
+}
+
+.service1 .productimage{ margin-right: 1.25rem;}
+
+.services .service2 {margin: 0 auto;
+text-align: center;}
+
+
+/* Media Queries (Mobile Business Info) */
+
+.businessinfo{flex-direction: column;}
+
+.businessinfo p{font-size:.77rem;
+margin-bottom:4rem;
+font-family: Helvetica;}
+
+.holding1, .holding2{width: 100%;}
+
+.holding2{margin-left:0;}
+
+.infotitle{width:100%;}
+
+.infotitle h1{text-align: center;}
+
+/* Media Queries (Mobile Footer) */
+
+.copyright img{margin: 0 auto;}
+
+.copyright span{display:none;}
+
+.copyright{justify-content: center;
+}
+
+}
